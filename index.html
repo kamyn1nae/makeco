@@ -1,171 +1,399 @@
-
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Myquail.ru</title>
-            <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="./css/main.css" rel="stylesheet" type="text/css"/>
-</head><body id="">
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#fff">
+	<title>Футбол. Прямые трансляции— LG Россия</title>
+	<meta name="description" content="Смотрите футбол на телевизоре LG. Прямые трансляции всех  64 матчей чемпионата. Возможность повторного просмотра.">
 
-<style>
-.color-preview{
-	margin-top: 20px;
-	width: 500px;
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta name="description" content="Смотрите футбол на телевизоре LG. Прямые трансляции всех  64 матчей чемпионата. Возможность повторного просмотра.">
+	<meta name="keywords" content="">
+	<meta property="og:title" content="Футбол, прямые трансляции всех 64 матчей чемпионата мира  — LG Россия" /> 
+	<meta property="og:description" content="Смотрите футбол на телевизоре LG. Прямые трансляции всех  64 матчей чемпионата. Возможность повторного просмотра."/>
+	<meta property="og:url" content="https://www.lg.com/ru/television/football"> 
+	<meta property="og:keywords" content="" />
+	<meta property="og:image" content="share.png">
+	<link rel="stylesheet" href="css/topmenu.min.css?v=1529172312365">
+	<link rel="stylesheet" href="css/style.css?v=1529172312365">
+    <link rel="stylesheet" href="css/style-n.css?v=1529172312365">
+  
+
+<style>.container {
+    overflow-x: hidden;
 }
-.color-preview td{
-	text-align: center;
+@media (max-width: 480px) {
+footer .socials-footer {
+    float: right;
+    width: auto!important;}
+.lg_promo_ftb h1 {
+    font-size: 42px!important;
+    }    
+    
 }
-.color-preview .img img{
-	border-radius: 8px;
-}
-.color-preview tr.label td{
-	padding-top: 7px;
-	font-family: georgia;
-	font-weight: bold;
-	font-style: italic;
-	text-shadow: 1px 1px 1px white;
-	font-size: 16px;
-	color: #555;
-}
-.color-preview tr.label td img{
-	position: relative; 
-	top: 4px;
-}
-p{
-	padding: 4px 20px;
-}
-.hr{
-	border-bottom: 1px  dashed #999;
-	margin: 18px 0px 9px 0px;
-}
-</style>
-<div id="center">
-<div id="wrapper">
-<div id="header">
-<div class="logo-text">
-Makeco.ru </div></div><div id="content">
-<div id="colOne">
-<div id="top-menu">
-эко проект
-
-</div><div class="latest-post">
-
-
-
-<div id="flash-block">
-
-</div>
-</div><div class="post">
-    <div class="postcontainer">
-
-
- <article>
-
-         <div class="wrap">
-             </div>
-         <div id="main_content">
-            <div class="wrap">
-               <section id="plan">
-                  <figure class='coleraine-diamond'>
-                     <figcaption>
-<br /><br />
-			    <img src='https://wtf.jpg.wtf/cb/cd/1473933825-cbcd5beddcb732ada0c33080138cb136.jpeg' width='697px'>
-                        <h1><span>Welcome! This site about my birds. Helena Nocch</span></h1>
-                        <p>Mutations and combinations of mutations Chinese quail (button quail):</p>
-
-<table class='color-preview'>
-	<tr class='img'>
-		<td>
-			
-			
-		</td>
-		
-	</tr>
-	
-
-</table>
-          <div class='hr'></div>             
-                     </figcaption>
-                  </figure>
-
-
-<figure class='coleraine-diamond'>
-                     <figcaption>
-<br /><br />
-
-                       
-                        <p>All right reserved. This license only allowing you to download this photos and share them with others, but you can’t change them in any way or use them commercially.</p>
-
-
-          <div class='hr'></div>       
-                     </figcaption>
-                  </figure>  
-
-
-
-               
-               </section>
-               <footer>
-                  <p>makeco.ru 2020 г.&nbsp; &nbsp; &nbsp; &nbsp; </p>
-               </footer>
-               <aside class="inactive">
-                  <nav>
+    
  
-                  </nav>
-               </aside>
+    .rowblack {background:#000;}
+
+.modal {
+  will-change: visibility, opacity;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  -webkit-transition-delay: $modal-delay;
+  transition-delay: $modal-delay;
+}
+
+.modal--active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal--align-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.modal__bg {
+  background: transparent;
+}
+
+.modal__dialog {
+  max-width: 100%;
+  width: 100%;
+  opacity: 1;
+  padding: 0;
+}
+
+.modal__content {
+  will-change: transform, opacity;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 0.4rem;
+  background: #000;
+  background-clip: padding-box;
+  opacity: 0;
+  -webkit-transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.modal__content--active {
+  opacity: 1;
+}
+
+.modal__close {
+  z-index: 1100;
+  cursor: pointer;
+}
+
+.modal__trigger {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  color: rgba(0, 0, 0, 0.7);
+  line-height: 1;
+  cursor: pointer;
+  background: #000;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.modal__trigger--active {
+  z-index: 10;
+}
+
+.modal__trigger:hover {
+  background: #000;
+}
+
+#modal__temp {
+  will-change: transform, opacity;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+  -webkit-transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: opacity 0.1s ease-out, transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/**
+ * Demo specific CSS
+ */
+
+
+
+img {
+  max-width: 100%;
+}
+
+.demo-btns header {
+  padding: 7vh 10vw;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.demo-btns header h1 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.54);
+  font-weight: 300;
+}
+
+.demo-btns .info {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.demo-btns p {
+  text-align: center;
+  color: #fff;
+}
+
+.demo-btns .link {
+  font-size: 20px;
+}
+
+.demo-btns .modal__trigger {
+  margin-right: 3px;
+}
+
+.demo-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.2rem;
+  padding: 0.6rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.demo-close svg {
+  width: 24px;
+  fill: #fff;
+  pointer-events: none;
+  vertical-align: top;
+}
+
+.demo-close:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.container574 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+
+.video574 {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50vw;
+  border-width: 0px!important;
+   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
+}
+
+</style>
+</head>
+<body>
+<div class="main-header">
+	<div class="top-line">
+		<div class="container-wrap clearfix">
+			<div class="logo">
+				<a href="/ru/"><img src="img/head/logo.jpg" alt="makeco"></a>
+			</div>
+				<div class="m-right">
+		
+			</div>
+
+			<div class="mob-menu">
+				<i></i>
+			</div>
+		</div>
+	</div>
+	<div class="middle-line">
+		<div class="container-wrap clearfix" style="position:relative;" >
+            
+      
+            
+            
+			
+		</div>
+	</div>
+</div>
+
+    <content class="container45">
+     <div class="row lg_promo_ftb">
+          <div class="col-lg-8 col-lg-offset-2 col-md-12 col-sm-12 col-xs-12">
+          <h1 class="centr-centr">Привет! Мы команда BePolar и мы готовим нечто грандиозное</h1>
+            
+          </div>
+        </div>
+        
+
+        
+      <div class="row nopadding">
+        <div class="nopadding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="block-10-wrapper text_positoin">
+               <img src="img/shapka.png" class="img-responsive">
             </div>
-         </div>
-      </article> 
+        </div>
+      </div>
+      <div class="row footb2 rowgray ">
+       <div class="col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-12 col-xs-12">
+            <a href="https://vk.com/makecology"><img src="img/makeco.png" class="img-responsive"></a>
+            <div class="text">На данный момент всю свежую информацию вы можете найти в наших группах в социальной сети "вконтакте"
 
+            </div>
+            </div>
+      
+      <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+           <a href="https://vk.com/makeco_tvoiholst"><img src="img/tvoiholst1.png" class="img-responsive"></a>
+          <div class="text">В наших группах вы узнаете, что мы делаем и что мы собираемся делать.</div>
+      </div>
 
-   </div>
+        </div>      
+         
+
+        
+      <div class="row lg_promo_ftb">
+          <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-12 col-xs-12">
+          <h1>Экология - это очень важно</h1>
+            
+          </div>
+        </div>
+
+        
+      <div class="row">
+        <div class="nopadding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="block-3n-wrapper text_positoin">
+               <img src="img/2441.jpg" class="img-responsive" alt="flickr,moulichoudari, cc-license">
+                <div class="text-container">
+
+                    
+                 
+
+                </div>
+                
+            </div>
+        </div>
+      </div>
+        
+        
+<div class="row rowgray block-footb">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+           <div class="lgplus-icon">
+                    <div class="row pad20">
+                        <div class="col-lg-2"> </div>
+                        <div class="col-lg-10 text">Сделайте свой выбор<br>в пользу планеты</div>  
+                    </div>
+                    <div class="row pad20">
+                        <div class="col-lg-2"> </div>
+                        <div class="col-lg-10 text">Уменьшите загрязнение<br>окружающей среды</div>  
+                    </div>
+                    <div class="row pad20">
+                        <div class="col-lg-2"> </div>
+                        <div class="col-lg-10 text">Будьте<br>с нами</div>  
+                    </div>
+                    </div>
+    </div>
 </div>
+        
+<row>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="demo-btns" style="padding-top:50px; padding-bottom:50px;">
+  <div class="info">
+   
 
-</div><div id="colTwo">
-
-<img width="180 px" border=0 src="./images/logo.png">
-<br />
-<div class="menuheading">
-
+  </div>
 </div>
-<!--
-<ul id="menu">
-<br /><li ><b> <a href='/'>album 1</a></b><br> </li>
-<li ><b> <a href='/'>album 2</a></b><br> </li>
-<li ><b> <a href='/'>album 3</a></b><br> </li>
-<li ><b> <a href='/'>album 4</a></b><br> </li>
-<li ><b> <a href='/'>album 5</a></b><br> </li>
-<br /><li ><b> <a href='/'>album 6</a></b><br> </li>
-</ul>
--->
-<br /><br />
-<div class="menuheading">
+    </div>
+</row>
+<!-- Modal -->
 
-</div><br />
-<br /><br />
 
-</div><div style="clear: both;">
-&nbsp;
-</div></div><div id="footer">
+        
+        
+        
+        
+    </content>
+    
+	
+			<!--noindex-->
+		
+<footer class="lg-landing-copy">
+	<div class="section-wrap">
+		<div class="socials-footer">
+			<span class="connect">Связаться c нами: </span>
+			<div class="socials-wrap">
+				<a href="https://vk.com/makecology" class="soc vk" target="_blank"><img src="img/sns_vk_copy.png" alt="" title="makeco"></a>
+				<!--<a href="" class="soc fb" target="_blank"><img src="img/sns_facebook_copy.png" alt="" title=""></a>
+				<a class="soc in" target="_blank" href="" data-sc-item="social-sharing" data-sc-value="instagram"><img src="img/insta_64-min.png" alt="instagram" title=""></a>
+				<a href="" class="soc ok" target="_blank"><img src="img/sns_odnok_copy.png" alt="" title=""></a>
+				<a class="soc yo" target="_blank" href="" data-sc-item="social-sharing" data-sc-value="youtube"><img src="img/sns_youtube_copy.png" alt="Youtube" title=""></a>-->
+			</div>
+		</div>
+		<span class="lg-landing-copy-text">Copyright © 2020 Makeco. Все права защищены.</span>
+	</div>
+</footer>
 
-<div class="footer-copy" style="color:black;">
-	2020 "Makeco" 
-</div>
-<a class='scrollTop' href='#header' style='display:none;'></a> 
 
-</div>
-</div>
-</div>
+
+
+<script type="text/javascript">_satellite.pageBottom();</script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
